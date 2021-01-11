@@ -14,7 +14,7 @@ Adds a search input field to the administration's navigation, which allows searc
 
 ## ZIP installation package for the Shopware Plugin Manager
 
-* Download the latest plugin version (e.g. `FroshAdminSalesChannelSearch-1.3.0.zip`)
+* Download the latest plugin version (e.g. `FroshAdminSalesChannelSearch-0.1.0.zip`)
 * Upload and install plugin using Plugin Manager
 
 ## Install with composer
