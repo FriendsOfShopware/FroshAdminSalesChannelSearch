@@ -1,0 +1,14 @@
+{% block sw_sales_channel_menu_navigation_main_list %}
+    {% block sw_sales_channel_menu_navigation_main_list_search %}
+        <div v-if="menuItems.length >= 5 || searchTerm.length"
+             class="sw-admin-menu__sales-channel-search collapsible-text">
+            <sw-simple-search-field
+                    class="sw-field--sales-channel-search"
+                    v-model="searchTerm"
+                    @search-term-change="onSearchTermChange">
+            </sw-simple-search-field>
+        </div>
+    {% endblock %}
+
+    {% parent %}
+{% endblock %}

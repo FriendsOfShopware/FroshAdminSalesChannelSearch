@@ -1,0 +1,51 @@
+{
+    "name": "frosh/admin-sales-channel-search",
+    "version": "0.1.0",
+    "type": "shopware-platform-plugin",
+    "keywords": [
+        "admin",
+        "saleschannel",
+        "sales",
+        "channel",
+        "search",
+        "shopware",
+        "frosh"
+    ],
+    "description": "Sales channel search for Shopware 6 administration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "FriendsOfShopware",
+            "homepage": "https://friendsofshopware.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Frosh\\AdminSalesChannelSearch\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": "~6.3",
+        "shopware/administration": "~6.3"
+    },
+    "extra": {
+        "shopware-plugin-class": "Frosh\\AdminSalesChannelSearch\\AdminSalesChannelSearch",
+        "copyright": "FriendsOfShopware",
+        "label": {
+            "de-DE": "Verkaufskanal-Suche",
+            "en-GB": "Sales channel search"
+        },
+        "description": {
+            "de-DE": "Erlaubt das Suchen nach Verkaufskanälen in der Administration-Navigation.",
+            "en-GB": "Allows searching for sales channels in the administration's navigation."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://github.com/FriendsOfShopware/FroshAdminSalesChannelSearch",
+            "en-GB": "https://github.com/FriendsOfShopware/FroshAdminSalesChannelSearch"
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/FriendsOfShopware/FroshAdminSalesChannelSearch/issues",
+            "en-GB": "https://github.com/FriendsOfShopware/FroshAdminSalesChannelSearch/issues"
+        }
+    }
+}
