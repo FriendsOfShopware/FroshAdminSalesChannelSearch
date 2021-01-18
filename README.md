@@ -8,7 +8,7 @@ Adds a search input field to the administration's navigation, which allows searc
 
 ## Screenshots
 
-![Screenshot 1](docs/img/screenshot-1.png) ![Screenshot 2](docs/img/screenshot-2.png)
+![Screenshot 1](src/Resources/store/images/screenshot-1.png) ![Screenshot 2](src/Resources/store/images/screenshot-2.png)
 
 # Installation
 
