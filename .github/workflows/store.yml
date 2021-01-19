@@ -1,10 +1,6 @@
 name: PackPlugin
 on:
     push:
-        branches:
-            - main
-        tags:
-            - '*'
 
 env:
     PLUGIN_NAME: ${{ github.event.repository.name }}
@@ -31,6 +27,7 @@ jobs:
                     cp -r "./${PLUGIN_NAME}" "/plugins/${PLUGIN_NAME}"
                     start-mysql
                     pack-plugin "${PLUGIN_NAME}"
+                    ls -la
 
             -   name: Upload Artifact
                 uses: actions/upload-artifact@v2
@@ -42,7 +39,9 @@ jobs:
                 run: wget 'https://github.com/FriendsOfShopware/FroshPluginUploader/releases/download/${{ env.PLUGIN_UPLOADER_VERSION }}/frosh-plugin-upload.phar' -O frosh-plugin-upload.phar
 
             -   name: Validate Zip
-                run: php frosh-plugin-upload.phar ext:validate $(pwd)/${PLUGIN_NAME}.zip
+                run: |
+                    ls -la
+                    php frosh-plugin-upload.phar ext:validate $(pwd)/${PLUGIN_NAME}.zip
 
             -   name: Update store information
                 run: php frosh-plugin-upload.phar ext:update $(pwd)/${PLUGIN_NAME}/
