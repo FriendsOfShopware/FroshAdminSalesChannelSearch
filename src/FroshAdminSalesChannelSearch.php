@@ -4,6 +4,6 @@ namespace Frosh\AdminSalesChannelSearch;
 
 use Shopware\Core\Framework\Plugin;
 
-class AdminSalesChannelSearch extends Plugin
+class FroshAdminSalesChannelSearch extends Plugin
 {
 }

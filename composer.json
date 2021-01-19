@@ -21,7 +21,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Frosh\\AdminSalesChannelSearch\\": "src/"
+            "Frosh\\FroshAdminSalesChannelSearch\\": "src/"
         }
     },
     "require": {
@@ -29,7 +29,7 @@
         "shopware/administration": "~6.3"
     },
     "extra": {
-        "shopware-plugin-class": "Frosh\\AdminSalesChannelSearch\\AdminSalesChannelSearch",
+        "shopware-plugin-class": "Frosh\\AdminSalesChannelSearch\\FroshAdminSalesChannelSearch",
         "copyright": "FriendsOfShopware",
         "label": {
             "de-DE": "Verkaufskanal-Suche",
