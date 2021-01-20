@@ -36,8 +36,8 @@
             "en-GB": "Sales channel search in the Administration"
         },
         "description": {
-            "de-DE": "Dieses Plugin erlaubt das Suchen nach Verkaufskanälen in der Navigation der Administration, sobald 5 oder mehr Verkaufskanäle angelgt wurden. Dies erleichtert die Navigation, besonders bei Shops, die viele Verkaufskanäle angelegt haben.",
-            "en-GB": "This plugin allows searching for sales channels in the navigation of the administration once 5 or more sales channels have been added. This makes navigation easier, especially for shops that have created many sales channels."
+            "de-DE": "Erlaubt das Suchen nach Verkaufskanälen in der Navigation der Administration, sobald 5 oder mehr Verkaufskanäle angelgt wurden, um die Navigation zu erleichtern.",
+            "en-GB": "Allows to search for sales channels in the administration navigation once 5 or more sales channels have been added to make the navigation more convenient."
         },
         "manufacturerLink": {
             "de-DE": "https://github.com/FriendsOfShopware/FroshAdminSalesChannelSearch",
