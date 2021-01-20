@@ -1,6 +1,6 @@
 {
     "name": "frosh/admin-sales-channel-search",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "type": "shopware-platform-plugin",
     "keywords": [
         "admin",
@@ -32,12 +32,12 @@
         "shopware-plugin-class": "Frosh\\AdminSalesChannelSearch\\FroshAdminSalesChannelSearch",
         "copyright": "FriendsOfShopware",
         "label": {
-            "de-DE": "Verkaufskanal-Suche",
-            "en-GB": "Sales channel search"
+            "de-DE": "Verkaufskanal-Suche in der Administration",
+            "en-GB": "Sales channel search in the Administration"
         },
         "description": {
-            "de-DE": "Erlaubt das Suchen nach Verkaufskanälen in der Administration-Navigation.",
-            "en-GB": "Allows searching for sales channels in the administration's navigation."
+            "de-DE": "Dieses Plugin erlaubt das Suchen nach Verkaufskanälen in der Navigation der Administration, sobald 5 oder mehr Verkaufskanäle angelgt wurden. Dies erleichtert die Navigation, besonders bei Shops, die viele Verkaufskanäle angelegt haben.",
+            "en-GB": "This plugin allows searching for sales channels in the navigation of the administration once 5 or more sales channels have been added. This makes navigation easier, especially for shops that have created many sales channels."
         },
         "manufacturerLink": {
             "de-DE": "https://github.com/FriendsOfShopware/FroshAdminSalesChannelSearch",
