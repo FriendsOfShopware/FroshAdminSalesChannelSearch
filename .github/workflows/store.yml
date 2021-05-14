@@ -10,12 +10,12 @@ env:
     PLUGIN_NAME: ${{ github.event.repository.name }}
     ACCOUNT_USER: ${{ secrets.ACCOUNT_USER }}
     ACCOUNT_PASSWORD: ${{ secrets.ACCOUNT_PASSWORD }}
-    PLUGIN_UPLOADER_VERSION: 0.3.9
+    PLUGIN_UPLOADER_VERSION: 0.3.11
 
 jobs:
     CreateZip:
         runs-on: ubuntu-latest
-        container: ghcr.io/friendsofshopware/platform-plugin-dev:v6.3.2
+        container: ghcr.io/friendsofshopware/platform-plugin-dev:v6.4.0
         steps:
             -   name: Get the version
                 id: get_version

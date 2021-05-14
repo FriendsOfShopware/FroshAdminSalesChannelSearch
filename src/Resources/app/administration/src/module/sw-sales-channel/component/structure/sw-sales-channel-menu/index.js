@@ -7,33 +7,29 @@ Shopware.Component.override('sw-sales-channel-menu', {
     data() {
         return {
             salesChannels: [],
-            menuItems: [],
             showModal: false,
             searchTerm: ''
         };
     },
-
-    methods: {
-        onSearchTermChange() {
-            this.loadEntityData();
-        },
-
-        loadEntityData() {
+    computed: {
+        salesChannelCriteria() {
             const criteria = new Criteria();
+
+            criteria.addSorting(Criteria.sort('sales_channel.name', 'ASC'));
+            criteria.addAssociation('type');
+            criteria.addAssociation('domains');
 
             if (this.searchTerm.trim().length) {
                 criteria.addFilter(Criteria.contains('sales_channel.name', this.searchTerm.trim()));
             }
 
-            criteria.setPage(1);
-            criteria.setLimit(500);
-            criteria.addSorting(Criteria.sort('sales_channel.name', 'ASC'));
-            criteria.addAssociation('type');
+            return criteria;
+        },
+    },
 
-            this.salesChannelRepository.search(criteria, Shopware.Context.api).then((response) => {
-                this.salesChannels = response;
-                this.createMenuTree();
-            });
+    methods: {
+        onSearchTermChange() {
+            this.loadEntityData();
         },
     },
 });

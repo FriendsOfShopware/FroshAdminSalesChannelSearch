@@ -4,7 +4,7 @@ Adds a search input field to the administration's navigation, which allows searc
 
 ## Requirements
 
-- Shopware 6.3 or higher
+- Shopware 6.4 or higher
 
 ## Screenshots
 

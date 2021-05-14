@@ -1,6 +1,6 @@
 {
     "name": "frosh/admin-sales-channel-search",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "type": "shopware-platform-plugin",
     "keywords": [
         "admin",
@@ -25,8 +25,8 @@
         }
     },
     "require": {
-        "shopware/core": "~6.3",
-        "shopware/administration": "~6.3"
+        "shopware/core": "~6.4",
+        "shopware/administration": "~6.4"
     },
     "extra": {
         "shopware-plugin-class": "Frosh\\AdminSalesChannelSearch\\FroshAdminSalesChannelSearch",
