@@ -1,0 +1,17 @@
+name: BuildPlugin
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        uses: FriendsOfShopware/actions/.github/workflows/store.yml@main
+        with:
+            extensionName: ${{ github.event.repository.name }}
+            shopwareVersion: '6.4.0'
+        secrets:
+            accountUser: ${{ secrets.ACCOUNT_USER }}
+            accountPassword: ${{ secrets.ACCOUNT_PASSWORD }}
+            ghToken: ${{ secrets.GITHUB_TOKEN }}
+
